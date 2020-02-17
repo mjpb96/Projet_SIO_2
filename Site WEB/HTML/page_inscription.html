@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Les Rousses au Jura</title>
+		<link rel="stylesheet" media="all" href="..\css\projet_css.css">
+	</head>
+	
+	<body>
+		
+		<header>
+
+			<h1>Les Rousses au Jura</h1>
+			
+		</header>
+
+		<nav>
+			
+			<ul id="">
+
+				<li><a href="page_accueil.html">ACCUEIL</a></li>
+
+				<li><a href="page_connexion.html">CONNEXION</a></li>
+					
+				<li><a href="page_reservation.html">RESERVATION</a></li>
+			
+				<li><a href="page_consultation.html">CONSULTATION</a></li>
+			
+				<li><a href="page_modification.html">MODIFICATION</a></li>
+			
+			</ul>
+
+		</nav>
+		
+			<h2>Créer votre Espace Client</h2>
+			<form action="inscription.php" method="post">
+			<fieldset>
+				<legend>INSCRIVEZ-VOUS</legend>
+				<p> Votre prénom : <input type="text" name="prenom" placeholder="Jean-Paul"> </p>
+				<p> Votre nom : <input type="text" name="nom" placeholder="Barthélémy"> </p>
+				<p> Votre date de naissance : <input type="date" name="naissance" placeholder="25/04/1996"> </p>
+				<p> Votre login : <input type="text" name="login"> </p>
+				<p> Votre mot de passe : <input type="password" name="pwd"> </p>
+				<p> Confirmez votre mot de passe : <input type="password" name="pwd"> </p>
+				<p> Adresse mail : <input type="email" name="email"> </p>
+				<p> Téléphone : <input type="tel" name="mobile"> </p>
+				<p> Etablissement : <input type="text" name="origine"> </p>
+				
+				<input type="submit" value="Envoyez !">
+			</fieldset>
+			</form>
+
+	</body>
+
+</html>
