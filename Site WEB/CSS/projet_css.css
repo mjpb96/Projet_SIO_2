@@ -2,9 +2,11 @@ html{
 	font-family: Open Sans, Arial;
 	background-color: white;
 }
+header{
+	position: sticky;
+}
 nav{
 	display: inline-block;
-	background-color: white;
 }
 nav ul{
 	margin-left: 5%;
@@ -23,4 +25,12 @@ nav ul li a{
 	overflow: hidden;
 	padding: 10px 30px;
 
+}
+
+#background_accueil{
+
+}
+.image_accueil{
+	height: 100%;
+	width:100%;
 }
