@@ -14,13 +14,13 @@
 
 			<a href="page_accueil.html"><img src="..\IMAGES\logo_rousses.png"></a>
 
+
+
 			<nav>
 
 				<ul>
 
 					<li><a href="page_accueil.html">Accueil</a></li>
-
-					<li><a href="page_connexion.html">Connexion</a></li>
 					
 					<li><a href="page_reservation.html">Réservation</a></li>
 			
@@ -29,31 +29,42 @@
 					<li><a href="page_modification.html">Modification</a></li>
 			
 				</ul>
-		
+
 			</nav>
 
 		</header>
+
+		<div id="background_login">
+
+			<h2>Identifiez-vous pour accéder à votre Espace Client</h2>
+
+			<img src="..\IMAGES\photo_login.jpg" class="photo_background">
+			
+			<div class="form_connexion">				
+				
+				<form action="login.php" method="post">
+
+					<fieldset>
+
+						<legend>VOUS POSSÉDEZ DÉJÀ UN COMPTE ?</legend>
+
+							<p>Identifiant :<input type="text" name="login"> </p>
+
+							<p>Mot de passe :<input type="password" name="pwd"> </p>
+
+							<a href="page_motdepasse_oublie.html">Mot de passe oublié ?</a>
+
+							<input type="submit" value="Connexion">
+
+					</fieldset>
+
+				</form>
+
+			</div>
+
+		</div>
+
 		
-			<h2>Identifiez vous pour accéder à votre Espace Client</h2>
-
-			<form action="login.php" method="post">
-
-				<fieldset>
-
-					<legend>VOUS POSSÉDEZ DÉJÀ UN COMPTE ?</legend>
-
-						<p> Identifiant : <input type="text" name="login"> </p>
-
-						<p> Mot de passe : <input type="password" name="pwd"> </p>
-
-						<a href="page_motdepasse_oublie.html">Mot de passe oublié ?</a>
-
-						<input type="submit" value="Connexion">
-
-				</fieldset>
-
-			</form>
-
 	</body>
 
 </html>
