@@ -7,7 +7,7 @@ body{
 	padding:0;
 }
 
-/*Menu de navifatin*/
+/*Menu de navigation*/
 
 header{
 	position: sticky;
@@ -17,41 +17,50 @@ header{
 	z-index: 2;
 	width: 100%;
 }
+header img{
+	margin-left:5%;
+}
 nav{
 	display: inline-block;
 }
 nav ul{
-	margin-left: 35%;
-	width: 100%;
+	width: 180%;
+	margin-left: 10%;
 }
 nav ul li{
 	list-style: none;
 	display: inline-block;
+	text-align: center;
+	margin-left: 7%;
+	padding: 4px;
 }
 
 nav ul li a{
-	font-size: 1.2em;
+	font-family: Montserrat;
+	font-size: 1.4em;
+	font-weight: bold;
 	text-decoration: none;
 	color: #004A7F;
 	font-weight: 600;
 	display: block;
 	overflow: hidden;
-	padding: 10px 30px;
-
 }
 #login{
-	background-color: gray;
+	background-color: #004A7F;
 	width: 10%;
 	position: absolute;
-	top:3%;
-	right:5%;
-	color: white;
+	top:40%;
+	right:8%;
 	border-color: blue;
+	padding: 15px;
+	text-align: center;
+	border-radius: 10px;
+}
+#login a{
 	font-family: Montserrat;
 	font-weight: 600;
-	text-align: center;
 	text-decoration: none;
-	padding: 10px;
+	color: white;
 }
 
 .photo_background{
@@ -75,10 +84,6 @@ nav ul li a{
 
 }
 
-/*page connexion*/
-
-
-
 /*Les formulaires*/
 
 legend{
@@ -88,11 +93,18 @@ legend{
 
 .form_connexion{
 	position: absolute;
-	top:30%;
-	left:30%;
+	top:35%;
+	left:42%;
+	width: 30%;
+	padding: 7% 2% 7% 2%;
+	opacity: 0.8;
+	border-radius: 5px;
 	background-color: white;
+	box-shadow: 0px 0px 20px 2px #aaa; 
 }
+.form_connexion{
 
+}
 .form_reservation{
 	position: absolute;
 	top:25%;
