@@ -1,4 +1,5 @@
 CREATE DATABASE LES_ROUSSES;
+USE LES_ROUSSES
 
 CREATE TABLE USER(
 id_user INTEGER,
@@ -17,7 +18,7 @@ CREATE TABLE SEJOUR(
 	nb_adulte INTEGER,
 	nb_enfant INTEGER,
 	nb_bebe INTEGER,
-	pension VARCHAR(12) /*complete / semi_complete */
+	pension VARCHAR(12), /*complete / semi_complete */
 	semaine INTEGER,
 	quotient_familial REAL, /*ajouter un tableau d'aider au calcul du quotient fam*/
 	menage INTEGER,
@@ -41,7 +42,7 @@ CREATE TABLE COLLOQUE(
 	chambre_quatre INTEGER,
 	aperitif INTEGER,
 	pauses INTEGER,
-	pension VARCHAR(12) /*complete / semi_complete */
+	pension VARCHAR(12), /*complete / semi_complete */
 	date_debut DATE,
 	date_fin DATE,
 	PRIMARY KEY (id_colloque)
@@ -60,8 +61,8 @@ CREATE TABLE SALLE(
 CREATE TABLE CHAMBRE(
 	id_chambre INTEGER,
 	id_user INTEGER,
-	double DATE,
-	triple DATE,
+	deux DATE,
+	trois DATE,
 	quatre DATE,
 	PRIMARY KEY(id_chambre)
 );
