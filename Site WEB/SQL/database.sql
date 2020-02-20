@@ -1,8 +1,7 @@
 CREATE DATABASE LES_ROUSSES;
-USE LES_ROUSSES
 
 CREATE TABLE USER(
-id_user INTEGER AUTO_INCREMENT,
+id_user INTEGER,
 email VARCHAR(100),
 password VARCHAR(100),
 nom VARCHAR(200),
@@ -13,12 +12,12 @@ PRIMARY KEY(id_user)
 );
 
 CREATE TABLE SEJOUR(
-	id_sejour INTEGER AUTO_INCREMENT,
+	id_sejour INTEGER,
 	id_user INTEGER,
 	nb_adulte INTEGER,
 	nb_enfant INTEGER,
 	nb_bebe INTEGER,
-	pension VARCHAR(12), /*complete / semi_complete */
+	pension VARCHAR(12) /*complete / semi_complete */
 	semaine INTEGER,
 	quotient_familial REAL, /*ajouter un tableau d'aider au calcul du quotient fam*/
 	menage INTEGER,
