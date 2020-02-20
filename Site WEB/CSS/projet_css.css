@@ -1,5 +1,5 @@
 html{
-	font-family: Open Sans, Arial;
+	font-family:  Montserrat, Open Sans, Arial;
 	background-color: white;
 }
 body{
@@ -25,14 +25,13 @@ nav{
 }
 nav ul{
 	width: 180%;
-	margin-left: 10%;
 }
 nav ul li{
 	list-style: none;
 	display: inline-block;
 	text-align: center;
 	margin-left: 7%;
-	padding: 4px;
+	padding: 12px;
 }
 
 nav ul li a{
@@ -49,8 +48,8 @@ nav ul li a{
 	background-color: #004A7F;
 	width: 10%;
 	position: absolute;
-	top:40%;
-	right:8%;
+	top: 35%;
+	right: 10%;
 	border-color: blue;
 	padding: 15px;
 	text-align: center;
@@ -86,24 +85,34 @@ nav ul li a{
 
 /*Les formulaires*/
 
-legend{
-	font-family: Montserrat;
-	font-weight: 600;
-}
-
 .form_connexion{
 	position: absolute;
-	top:35%;
-	left:42%;
-	width: 30%;
-	padding: 7% 2% 7% 2%;
-	opacity: 0.8;
+	top:50%;
+	left:50%;
+	width: 20%;
+	padding: 40px;
 	border-radius: 5px;
-	background-color: white;
-	box-shadow: 0px 0px 20px 2px #aaa; 
+	background-color: #004A7F;
+	box-shadow: 0px 0px 20px 2px #004A7F;
+	text-align: center;
 }
-.form_connexion{
-
+.form_connexion h1{
+	color: white;
+	font-weight: 400;
+}
+.form_connexion input[type="text"], .form_connexion input[type="password"]{
+	border: 2px solid #fff;
+	background: none;
+	text-align: center;
+	display: block;
+	margin: 30px auto;
+	padding: 15px 10px;
+	color: white;
+	border-radius: 30px;
+	outline:none;
+}
+.form_connexion input[type="text"]:focus, .form_connexion input[type="password"]:focus{
+	width:200px;
 }
 .form_reservation{
 	position: absolute;
