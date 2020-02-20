@@ -1,34 +1,35 @@
 CREATE DATABASE LES_ROUSSES;
-USE LES_ROUSSES
+USE LES_ROUSSES;
 
 CREATE TABLE USER(
-id_user INTEGER,
-email VARCHAR(100),
-password VARCHAR(100),
-nom VARCHAR(200),
-prenom VARCHAR(200),
-entreprise VARCHAR(50),
-telephone VARCHAR(10),
-PRIMARY KEY(id_user)
+	id_user INTEGER AUTO_INCREMENT,
+	email VARCHAR(100),
+	mdp VARCHAR(200),
+	nom VARCHAR(50),
+	prenom VARCHAR(50),
+	entreprise VARCHAR(50),
+	telephone CHAR(10),
+	PRIMARY KEY(id_user)
 );
 
 CREATE TABLE SEJOUR(
-	id_sejour INTEGER,
+	id_sejour INTEGER AUTO_INCREMENT,
 	id_user INTEGER,
 	nb_adulte INTEGER,
 	nb_enfant INTEGER,
 	nb_bebe INTEGER,
-	pension VARCHAR(12), /*complete / semi_complete */
+	pension VARCHAR(12),
 	semaine INTEGER,
-	quotient_familial REAL, /*ajouter un tableau d'aider au calcul du quotient fam*/
+	quotient_familial FLOAT,
 	menage INTEGER,
+	reservation BOOLEAN,
 	PRIMARY KEY(id_sejour)
 );
 
 CREATE TABLE LOGEMENT(
 	id_logement INTEGER,
 	id_user INTEGER,
-	type_logement VARCHAR, /*logement / handicape*/
+	type_logement VARCHAR,
 	semaine INTEGER,
 	PRIMARY KEY(id_logement)
 );
@@ -42,9 +43,10 @@ CREATE TABLE COLLOQUE(
 	chambre_quatre INTEGER,
 	aperitif INTEGER,
 	pauses INTEGER,
-	pension VARCHAR(12), /*complete / semi_complete */
+	pension VARCHAR(12),
 	date_debut DATE,
 	date_fin DATE,
+	reservation BOOLEAN,
 	PRIMARY KEY (id_colloque)
 );
 
@@ -55,6 +57,7 @@ CREATE TABLE SALLE(
 	commission_50 DATE,
 	commission_25 DATE,
 	commission_10 DATE,
+	reservation BOOLEAN,
 	PRIMARY KEY(id_salle)
 );
 
@@ -79,4 +82,13 @@ CREATE TABLE MATERIEL(
 	baladeur DATE,
 	micro_cravatte DATE,
 	PRIMARY KEY(id_materiel)
+);
+
+CREATE TABLE PAIEMENT(
+	id_paiement INTEGER AUTO_INCREMENT,
+	date_paiement DATE,
+	mode_paiement VARCHAR(15),
+	accompte INTEGER,
+	solde INTEGER,
+	PRIMARY KEY(id_paiement)
 );
