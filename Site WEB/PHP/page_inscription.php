@@ -42,16 +42,13 @@
 			<form action="inscription.php" method="post">
 			<fieldset>
 				<legend>INSCRIVEZ-VOUS</legend>
-				<p> Votre prénom : <input type="text" name="prenom" placeholder="Jean-Paul"> </p>
-				<p> Votre nom : <input type="text" name="nom" placeholder="Barthélémy"> </p>
-				<p> Votre date de naissance : <input type="date" name="naissance" placeholder="25/04/1996"> </p>
-				<p> Votre login : <input type="text" name="login"> </p>
-				<p> Votre mot de passe : <input type="password" name="pwd"> </p>
-				<p> Confirmez votre mot de passe : <input type="password" name="pwd"> </p>
 				<p> Adresse mail : <input type="email" name="email"> </p>
-				<p> Téléphone : <input type="tel" name="mobile"> </p>
-				<p> Etablissement : <input type="text" name="origine"> </p>
-				
+				<p> Votre mot de passe : <input type="password" name="password"> </p>
+				<p> Votre nom : <input type="text" name="nom" placeholder="Barthélémy"> </p>
+				<p> Votre prénom : <input type="text" name="prenom" placeholder="Jean-Paul"> </p>
+				<p> Etablissement : <input type="text" name="entreprise"> </p>
+				<p> Téléphone : <input type="tel" name="telephone"> </p>
+				<p> Votre date de naissance : <input type="date" name="naissance" placeholder="25/04/1996"> </p>
 				<input type="submit" value="Envoyez !">
 			</fieldset>
 			</form>
