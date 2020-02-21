@@ -1,47 +1,49 @@
+
 <?php
 
-	$login = $_POST['login'];
-	$pwd = $_POST['pwd'];
+session_start();
+$user_Db = 'root';
+$password_Db = '';
+$name_Serveur = 'localhost';
+$name_Db = "rousses_db";
 
-	$servername = "localhost";
-	$username = "root";
-	$password = "";
-	$dbname = "connexion";
-
-	if (isset($_POST['login']) && isset($_POST['pwd'])){
+/* Proposition numéro 1 de système de connexion
+	if (isset($_POST['email']) && isset($_POST['mdp'])){
 		try {
-			$conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+			$conn = new PDO("mysql:host=$name_Serveur; dbname=$name_Db", $user_Db, $password_Db);
 			// set the PDO error mode to exception
 			$conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-			$req = $conn->prepare("SELECT login, pwd FROM user WHERE login = :login") ;
-			// use exec() because no results are returned
-			$req->execute(['login' => $login]);
-			$result = $req->fetch();
 			
-			// Comparaison du pass envoyé via le formulaire avec la base
-			$verif_pass = password_verify($_POST['pwd'], $result['pwd']);
+			$email = $_POST['email'];
+			$mdp = $_POST['mdp'];
+			
+			$reqSQL = "SELECT email, mdp FROM CLIENT WHERE email = '$email' and mdp = MD5('$mdp')";
+			$req = $conn->query($reqSQL);
 
-			if (!$result){
-    			echo 'Mauvais identifiant ou mot de passe !';
-			}
-			else{
-    			if ($verif_pass) {
-        			session_start();
-        			$_SESSION['pseudo'] = $pseudo;
-        			echo 'Connected !';
-    			}
-    			else {
-        			echo 'Wrong password !';
-    			}
-			}
 			
 		}
-		catch(PDOException $e)
-		{
-			echo $sql . "<br>" . $e->getMessage();
+		catch (PDOException $e){
+			echo "Attention : " . $e -> getMessage()."<br/>";
 		}
-		$conn = null;
-	}	
+	}else{
+		echo "Un ou plusieurs champ(s) vide(s)" ;
+}
+
+*/
+
+/* Proposition numéro 2 de système de connexion
+*/
+
+	if (isset($_POST['email']) && isset($_POST['mdp'])){
+		if (!empty($_POST['email']) AND !empty($_POST['mdp'])){
+				
+		}
+	} else {
+		$erreur = "Erreur";
+	}
+
+
 ?>
-<?<
+
+
+
