@@ -12,25 +12,25 @@
 
 		<header>
 
-			<a href="page_accueil.html"><img src="..\IMAGES\logo_rousses.png"></a>
+			<a href="page_accueil.php"><img src="..\IMAGES\logo_rousses.png"></a>
 
 			<nav>
 
 				<ul>
 
-					<li><a href="page_accueil.html">Accueil</a></li>
+					<li><a href="page_accueil.php">Accueil</a></li>
 					
-					<li><a href="page_reservation.html">Réservation</a></li>
+					<li><a href="page_reservation.php">Réservation</a></li>
 			
-					<li><a href="page_consultation.html">Consultation</a></li>
+					<li><a href="page_consultation.php">Consultation</a></li>
 			
-					<li><a href="page_modification.html">Modification</a></li>
+					<li><a href="page_modification.php">Modification</a></li>
 			
 				</ul>
 
 			<div id="login">
 				
-				<a href="page_connexion.html">Mon compte</a>
+				<a href="page_connexion.php">Mon compte</a>
 
 			</div>
 
@@ -42,7 +42,7 @@
 
 			<img src="..\IMAGES\photo_accueil.jpg" class="photo_background">
 
-			<a href="page_reservation.html">JE RÉSERVE →</a>
+			<a href="page_reservation.php">JE RÉSERVE →</a>
 			
 		</div>
 
