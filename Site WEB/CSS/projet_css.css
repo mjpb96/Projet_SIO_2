@@ -12,7 +12,7 @@ body{
 header{
 	position: sticky;
 	top:0px;
-	background-color: white;
+	background-color: green;
 	box-shadow: 4px 4px 10px #6e6e6e;
 	z-index: 2;
 	width: 100%;
