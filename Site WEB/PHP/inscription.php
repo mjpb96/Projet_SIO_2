@@ -3,7 +3,7 @@ session_start();
 $user_Db = 'root';
 $password_Db = '';
 $name_Serveur = 'localhost';
-$name_Db = "rousses_db";
+$name_Db = "les_rousses";
 
 if ($_POST['email']!='' && $_POST['password']!='' && $_POST['nom']!='' && $_POST['prenom']!='' && $_POST['entreprise']!='' && $_POST['telephone']!='' && $_POST['naissance']!=''){
 	try{

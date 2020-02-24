@@ -5,7 +5,7 @@ session_start();
 $user_Db = 'root';
 $password_Db = '';
 $name_Serveur = 'localhost';
-$name_Db = "rousses_db";
+$name_Db = "les_rousses";
 
 	if (isset($_POST['email']) && isset($_POST['mdp'])){
 		try {
@@ -32,9 +32,7 @@ $name_Db = "rousses_db";
 				header('Location: page_accueil.php');
 			}else {
 				echo "Login incorrect";
-			}
-
-			
+			}	
 		}
 		catch (PDOException $e){
 			echo "Attention : " . $e -> getMessage()."<br/>";

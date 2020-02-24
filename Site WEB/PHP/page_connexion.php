@@ -49,9 +49,9 @@
 
 					<h1> CONNEXION</h1>
 
-					<input type="text" name="login" placeholder="Identifiant">
+					<input type="text" name="email" placeholder="Identifiant">
 
-					<input type="password" name="pwd" placeholder="Mot de passe">
+					<input type="password" name="mdp" placeholder="Mot de passe">
 												
 					<input type="submit" value="Connexion"><br>
 					<br>

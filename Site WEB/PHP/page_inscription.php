@@ -39,7 +39,7 @@
 		</header>
 		
 			<h2>Créer votre Espace Client</h2>
-			<form action="inscription.php" method="post">
+			<form action="inscription.php" method="post" class="form_connexion">
 			<fieldset>
 				<legend>INSCRIVEZ-VOUS</legend>
 				<p> Adresse mail : <input type="email" name="email"> </p>
