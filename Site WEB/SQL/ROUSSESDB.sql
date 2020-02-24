@@ -11,6 +11,7 @@ CREATE TABLE CLIENT(
 	prenom VARCHAR(50),
 	entreprise VARCHAR(50),
 	telephone CHAR(10),
+	naissance DATE,
 	PRIMARY KEY(id_client)
 );
 
